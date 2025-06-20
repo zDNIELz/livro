@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Colection</title>
+    <!-- FONTS -->
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/2d409917ce.js" crossorigin="anonymous"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./Styles/Reset.css">
+    <link rel="stylesheet" href="./Styles/Styles.css">
+</head>
+
+<body>
+    <header>
+        <button>
+            <img src="./Styles/img/circle-user-solid.svg" alt="" id="perfil">
+        </button>
+
+        <img src="./Styles/img/headerLogo.png" alt="" id="logo">
+
+        <div>
+            <button>
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <button>
+                <i class="fa-regular fa-bell"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="page1" class="active">
+            <blockquote id="phraseDay">
+                “A leitura é, provavelmente, uma outra maneira de estar em um lugar.”
+                <div>— José Saramago</div>
+            </blockquote>
+
+            <div id="readNow">
+                <div class="nothing"></div>
+                <div>
+                    <img src="./Styles/img/livro.webp" alt="">
+                    <div class="description">
+                        <h4><a href="./teste.html">Os Quatro Grandes</a></h4>
+                        <h5>De <a href="./teste.html">Agatha Christie</a></h5>
+                        <button>Continuar Leitura</button>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="marks">
+                <div class="nothing"></div>
+            </div>
+            <div id="nextBook">
+                <div class="nothing"></div>
+            </div>
+
+            <div id="quickStats">
+                <div class="nothing"></div>
+            </div>
+        </section>
+
+        <section id="page2"></section>
+        <section id="page3"></section>
+        <section id="page4"></section>
+        <section id="page5"></section>
+    </main>
+    <footer>
+        <button onclick="pageView('page1', this)" class="activeBtn"><i class="fa-solid fa-house"></i></button>
+        <button onclick="pageView('page2', this)"><i class="fa-solid fa-book"></i></button>
+        <button onclick="pageView('page3', this)"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button onclick="pageView('page4', this)"><i class="fa-solid fa-chart-simple"></i></button>
+        <button onclick="pageView('page5', this)"><i class="fa-solid fa-list-ul"></i></button>
+    </footer>
+
+    <script src="./Main.js"></script>
+</body>
+
+</html>
